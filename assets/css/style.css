@@ -25,3 +25,42 @@ body {
 
 .coins img {
     width: 200%;
+}
+    .stats {
+        display: flex;
+        color: blue;
+        font-family: 500;
+        padding: 20px;
+        margin-top: 55px;
+        margin-bottom: 40px;
+        box-shadow: 0 0 20px rgb(15, 15, 15);
+    }
+    
+    .stats p:nth-last-child(1){
+        margin-left: 50%;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    button{
+        background: rgb(92, 223, 247);
+        width: 150px;
+        padding: 15px 0;
+        border: none;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #flip-button{
+        background: rgb(8, 33, 37);
+        color: rgb(255, 255, 255);
+    }
+    #reset-button{
+        background: rgb(8, 33, 37);
+        color: seashell;
+    }
+    
