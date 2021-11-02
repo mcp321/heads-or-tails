@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100%;
+    background-color: black;
+}
+.container  {
+    background: blanchedalmond;
+    width: 400px;
+    padding: 50px;
+    margin: 120px auto;
+    border-radius: 10px;
+}
+
+.coins {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.coins img {
+    width: 200%;
