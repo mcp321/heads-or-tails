@@ -16,15 +16,20 @@ body {
     border-radius: 10px;
 }
 
+
 .coins {
-    height: 150px;
-    width: 150px;
-    position: relative;
-    margin: 50px auto;
+   display: flex;
+   position: relative;
+   margin: 50px auto;
 }
 
-.coins img {
-    width: 200%;
+.coin {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+.container img {
+    width: 100%;
 }
     .stats {
         display: flex;
