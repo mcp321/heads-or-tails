@@ -1,3 +1,5 @@
+
+
 let coins = document.querySelector(".coins");
 let flipBtn = document.querySelectorAll(".flip-button");
 let resetBtn = document.getElementById("resert-button");

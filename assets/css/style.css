@@ -6,16 +6,16 @@
 }
 body {
     height: 100%;
-    background-color: black;
+    background-color: rgb(4, 119, 128);
 }
 .container  {
     background: blanchedalmond;
     width: 400px;
+    height: 550px;
     padding: 50px;
     margin: 120px auto;
     border-radius: 10px;
 }
-
 
 .coins {
    display: flex;
@@ -45,27 +45,16 @@ body {
         margin-left: 50%;
     }
     
-    .buttons {
-        display: flex;
-        justify-content: space-between;
-    }
     
     button{
-        background: rgb(92, 223, 247);
+        background: rgb(24, 213, 238);
         width: 150px;
         padding: 15px 0;
         border: none;
         font-size: 16px;
-        border-radius: 5px;
+        border-radius: 30px;
         cursor: pointer;
+        float: right;
+        margin-bottom: 10px;
     }
 
-    #flip-button{
-        background: rgb(8, 33, 37);
-        color: rgb(255, 255, 255);
-    }
-    #reset-button{
-        background: rgb(8, 33, 37);
-        color: seashell;
-    }
-    
