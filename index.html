@@ -15,7 +15,7 @@
             <div class="coin" id="heads">
                 <img src="assets/images/heads.png" alt="heads">
             </div>
-            <div   class="coin" id="tails">
+            <div class="coin" id="tails">
                 <img src="assets/images/tails.png" alt="tails">
             </div>
         </div>
@@ -30,11 +30,25 @@
             </p>
         </div>
 
+        <div>
+            <p style="margin-bottom: 15px;">Kindly select your desired option</p>
+
+            <label for="head" style="margin-bottom: 15px;">
+                Head
+                <input type="radio" id="head" name="coin" value="head" onclick="EnableFlip(true);">
+            </label>
+
+            <label for="tail" style="margin-bottom: 15px;">
+                Tail
+                <input type="radio" id="tail" name="coin" value="tail" onclick="EnableFlip(true);">
+            </label>
+        </div>
+        <br>
+
+
         <div class="buttons">
-            <button id="heads-button" data-type="heads">Heads</button>
-            <button id="tails-button" data-type="tails">Tails</button>
-            <button id="reset-button" data-type="reset">Reset</button>
-            <button id="flip-button" data-type="flip">Flip</button>
+            <button id="flip" onclick="FlipButton()">Flip</button>
+            <button id="reset" inclick="reset">Reset</button>
         </div>
     </div>
 
