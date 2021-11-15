@@ -1,12 +1,16 @@
 document.getElementById("flip").disabled = true;
+let flipHeadsScore = 0;
+let flipTailScore = 0;
 
+let flipHeads = document.getElementById('heads-score');
+let flipTails = document.getElementById('tails-score');
 
-function EnableFlip(shouldEnable) {
-    if (shouldEnable === 'true') {
-        document.getElementById("flip").disabled = true;
-    } else {
-        document.getElementById("flip").disabled = false;
-    }
+let userSelection; 
+let resetButton = document.getElementById('reset');
+
+function EnableFlip(selection) {
+    userSelection = selection;
+    document.getElementById("flip").disabled = false;
 }
 
 function FlipButton() {
@@ -17,7 +21,7 @@ function FlipButton() {
 
     // Run the code to flip the coin
     let i = Math.floor(Math.random() * 2),
-        heads = document.getElementById("heads")
+        heads = document.getElementById("heads");
         tails = document.getElementById("tails");
 
         if (i > 0) {
@@ -27,55 +31,30 @@ function FlipButton() {
             heads.style.display = "block";
             tails.style.display = "none";
         }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let buttons = document.getElementsByTagName("button")
-// let flipBtn = document.getElementById("flip-button")
-
-
-
-// for (let button of buttons)
-//     button.addEventListener("click", function(){ 
-//         if(this.getAttribute("data-type") === "flip"){
-
-//     let i = Math.floor(Math.random() * 2);
-//     let heads = document.getElementById("heads")
-//     let tails = document.getElementById("tails")
-
     
-//                 if (i > 0) {
-//                     heads.style.display = "none";
-//                     tails.style.display = "block";
-//                 } else {
-//                     heads.style.display = "block";
-//                     tails.style.display = "none";
-//                 }
-        
-//     addScore = document.getElementById("heads-score")
-//     if (i===0 && this.getAttribute("data-type") === "heads"){
-         
-        
-//     }else if (i > 0 && this.getAttribute("data-type") === "tails"){
+        switch (userSelection.toLowerCase()) {
+            case 'head':
+                if (i <= 0){ 
+                    flipHeadsScore +=1;
+                    flipHeads.innerHTML = 'Heads: ' + flipHeadsScore;
+                }
+                break;
+       
+            default: 
+            if(i > 0)
+            flipTailScore +=1;
+            flipTails.innerHTML = 'Tails: ' + flipTailScore;
     
-                
-//     }}})
+                break;
+
+             
+        }
+    }
+
+   
+
+    resetButton.addEventListener("click",() => {
+        flipHeads.innerHTML = 'Heads: 0'
+        flipTails.innerHTML = 'Tails: 0'
         
+    });
