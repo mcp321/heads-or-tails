@@ -1,9 +1,24 @@
 # Flip Coin Game
 This game is very nostalgic almost everyone of us played a flip a coin game when we were child 
 together with friends,sibling or coucins.<br> 
-And who doesn't want to see a computer game version of it? we can go back in time when we used 
+And who doesn't want to see a computer game version of it? Where we can go back in time when we used 
 to play it as little child by playing <br>  its computer version.
-Does this game make you excited? 
+
+## Language used
+* HTML
+* CSS
+* JavaScript
+
+## User Goals
+
+* The goal of this website is for the users to play the game they loved playing as a kid.
+
+## Surface
+
+* Main colors used for this project
+    * Background: rgb(4, 119, 128)
+    * game area background : blanchedalmond
+    * Font color: Black
 
 ## Features
 * The Header 
@@ -15,6 +30,10 @@ Does this game make you excited?
     <img src= "assets/images/gamebox.png">
 
 ## Testing
+* Tested that it works on different browsers chrome,safari.
+* The project is responsive on mobile devices and other small screen device
+
+## Validator Testing
 * HTML
     * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
@@ -40,3 +59,13 @@ Does this game make you excited?
     * From the source section drop-down menu, select the Master Branch
     * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 * The live link can be found here - https://mcp321.github.io/heads-or-tails/
+
+## Credits
+
+* [W3schools](https://www.w3schools.com/) For ideas on how pto properly used some codes.
+* mysterycode, coding artist and coding nepal's youtube channed for inspiration about the game.
+
+## Acknowledgements
+* My mentor for the very good planning, suggestions and for not giving up on me.
+* Tutor suppor for always being there when needed. 
+
