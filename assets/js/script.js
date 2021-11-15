@@ -54,7 +54,18 @@ function FlipButton() {
    
 
     resetButton.addEventListener("click",() => {
-        flipHeads.innerHTML = 'Heads: 0'
-        flipTails.innerHTML = 'Tails: 0'
-        
+        // reset the Score 
+        flipHeads.innerHTML = 'Heads: 0';
+        flipTails.innerHTML = 'Tails: 0';
+        flipHeadsScore = 0;
+        flipTailScore = 0;
+        // reset the coins 
+        heads.style.display = "block";
+        tails.style.display = "block";
+        document.getElementById("head").disabled = false;
+        document.getElementById("tail").disabled = false;
+        // reset the radio button so the players can choose side again
+        document.getElementById("tail").checked = false;
+        document.getElementById("tail").checked = false;
+       
     });
