@@ -66,6 +66,6 @@ function FlipButton() {
         document.getElementById("tail").disabled = false;
         // reset the radio button so the players can choose side again
         document.getElementById("tail").checked = false;
-        document.getElementById("tail").checked = false;
+        document.getElementById("head").checked = false;
        
     });
