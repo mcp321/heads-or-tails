@@ -32,14 +32,14 @@
         </div>
 
         <div>
-            <p style="margin-bottom: 15px;">Kindly select your desired option</p>
+            <p id="select">Select your coin</p>
 
-            <label for="head" style="margin-bottom: 15px;">
+            <label for="head">
                 Head
                 <input type="radio" id="head" name="coin" value="head" onclick="EnableFlip('head');">
             </label>
 
-            <label for="tail" style="margin-bottom: 15px;">
+            <label for="tail">
                 Tail
                 <input type="radio" id="tail" name="coin" value="tail" onclick="EnableFlip('tail');">
             </label>
@@ -49,7 +49,7 @@
 
         <div class="buttons">
             <button id="flip" onclick="FlipButton()">Flip</button>
-            <button id="reset" onclick="resetButton">Reset</button>
+            <button id="reset" onclick="resetButton">Play Again</button>
         </div>
     </div>
 

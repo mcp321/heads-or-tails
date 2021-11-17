@@ -14,6 +14,9 @@ body {
     float: unset;
     margin-top: 50px;
 }
+#select{
+    margin-bottom: 15px;
+}
 
 
 .container  {
